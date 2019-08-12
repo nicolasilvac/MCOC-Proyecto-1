@@ -27,9 +27,9 @@ u_km1 = u_k.copy()
 
 #Parametros del problema (hierro)
 dt = 1.        #s
-K = 15.     #m^2/s
-c = 900.       #J/Kg C
-rho = 2100.    #Kg/m^3
+K = 79.5      #m^2/s
+c = 450.       #J/Kg C
+rho = 7800.    #Kg/m^3
 alpha = K*dt/(c*rho*dx**2)
 
 print "dt = ", dt
@@ -62,7 +62,7 @@ for k in range (10000):
     #Avanzar la solucion a  K+1
     u_k = u_km1
     
-    if k % 100 == 0:
+    if k % 200 == 0:
         plot (x,u_k)
         
 title("k = {}  t = {} s".format(k, k*dt))
