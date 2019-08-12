@@ -25,7 +25,7 @@ u_k[n] = 0.
 #Temperatura en el tiempo K+1 t = dt * (K+1)
 u_km1 = u_k.copy()
 
-#Parametros del problema (hormigon)
+#Parametros del problema (hierro)
 dt = 1.        #s
 K = 15.     #m^2/s
 c = 900.       #J/Kg C
@@ -47,15 +47,17 @@ k = 0
 for k in range (17000):
     t = dt*k
     
-    u_k[0] = 0.
-    u_k[n] = 0.
+    u_k[0] = 20.
+    u_k[n] = 20.
     #Loop en el espacio  i = 1... n-1  u_Km1[0] = 0  u_Km1[n] = 
     
     for i in range(1,n):
         # print i 
         #Algoritmo de diferencias finitas 1-D para difusion
-        u_km1[i] = u_k[i] + alpha*(u_k[i+1] - 2*u_k[i] + u_k[i-1])
-        
+        if i == 1:
+            u_km1[i] = u_k[i] + alpha*(u_k[i+1] - 2*u_k[i] + u_k[i-1])
+        else:
+            u_km1[i] = u_k[i] + alpha*(u_k[i+1] - 2*u_k[i] + u_k[i-1])
     #Avanzar la solucion a  K+1
     u_k = u_km1
     
