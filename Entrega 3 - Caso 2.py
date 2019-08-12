@@ -59,7 +59,7 @@ for k in range (17000):
     #Avanzar la solucion a  K+1
     u_k = u_km1
     
-    if k % 200 == 0:
+    if k % 100 == 0:
         plot (x,u_k)
         
 title("k = {}  t = {} s".format(k, k*dt))
