@@ -25,11 +25,11 @@ u_k[n] = 20.
 #Temperatura en el tiempo K+1 t = dt * (K+1)
 u_km1 = u_k.copy()
 
-#Parametros del problema (hierro)
+#Parametros del problema (hormigon)
 dt = 1.        #s
 K = 15.     #m^2/s
 c = 900.       #J/Kg C
-rho = 2100.    #Kg/m^3
+rho = 2400.    #Kg/m^3
 alpha = K*dt/(c*rho*dx**2)
 
 print "dt = ", dt
