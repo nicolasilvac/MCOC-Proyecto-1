@@ -20,7 +20,7 @@ u_k = u0.copy()  #copy crea una nueva instancia del vector en me
 
 #Condiciones de borde (esenciales)
 u_k[0] = 0.
-u_k[n] = 20.
+u_k[n] = 0.
 
 #Temperatura en el tiempo K+1 t = dt * (K+1)
 u_km1 = u_k.copy()
