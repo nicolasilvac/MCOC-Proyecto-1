@@ -87,14 +87,17 @@ print "rho = ", rho
 print "alpha = ", alpha
 
 
-exit(0)
-plot(x,u0,"k--")
 
 
 #Loop en el tiempo
 k = 0
-for k in range (5000):
-    t = dt*k
+figure (1)
+inshowbien(u_k)
+title("k = {}   t = {}s".format(k,k*dt))
+savefig("movie/frame)
+
+for k in range (1000):
+    t = dt*k + 1
     print "k =",k, "t =",t
     
     #CBesencial
@@ -103,7 +106,7 @@ for k in range (5000):
     
    
     for i in range(1,Nx-1):
-        for j in range (1,Nx-1):
+        for j in range (1,Ny-1):
             #Laplaciano
             nabla_u_k[i,j] = (u_k[i-1,j] + u_k[i+1,j] + u_k[i,j-1] + u_k[i, j+1] - 4*u_k[i,j])/h**2
             
