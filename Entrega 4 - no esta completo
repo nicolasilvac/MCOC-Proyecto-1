@@ -34,14 +34,14 @@ u_k[:,0]=20
 
 #buena idea definir funciones que hagan el codigo expresivo 
 def printbien(u):
-	print u.T[Nx::-1,:]
+	print u.T[nx::-1,:]
 
 print u_k 			#imprime con el eje e invertido
 print "Arreglado:"
 printbien(u_k)	#LO arregla
 
 def imshowbien(u):
-	imshow(u.T[Nx::-1,:])
+	imshow(u.T[nx::-1,:])
 
 figure()
 imshowbien(u_k)
@@ -57,7 +57,7 @@ u0 = fun_u0(x)
 u_k = u0.copy()  #copy crea una nueva instancia del vector en me
 
 #Condiciones de borde (esenciales)
-u_k[0] = 0.
+u_k[0.] = 0.
 u_k[n] = 20.
 
 #Temperatura en el tiempo K+1 t = dt * (K+1)
@@ -83,7 +83,7 @@ plot(x,u0,"k--")
 
 #Loop en el tiempo
 k = 0
-for k in range (5000):
+for k in range (5000.):
     t = dt*(k+1)
     print "k=", k, "t=",t
     u_k[0,:] = 0.
