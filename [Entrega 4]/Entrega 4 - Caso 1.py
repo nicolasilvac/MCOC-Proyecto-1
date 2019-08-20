@@ -2,7 +2,7 @@ from matplotlib.pylab import *
 
 
 a = 1.    		#Ancho del dominio
-b = 1.          #Largo del dominio
+b = 1.          	#Largo del dominio
 Nx = 30    		#Numero de intervalos en x
 Ny = 30   		#Numero de intervalos en Y
 
