@@ -2,9 +2,9 @@ from matplotlib.pylab import *
 
 
 a = 1.    		#Ancho del dominio
-b = 1.          #Largo del dominio
+b = 1.           #Largo del dominio
 Nx = 30    		#Numero de intervalos en x
-Ny = 30   		#Numero de intervalos en Y
+Ny = 30  		#Numero de intervalos en Y
 
 dx = b / Nx   	#Discretizacion espacial en X
 dy = a / Ny   	#Discretizacion espacial en Y
@@ -36,7 +36,7 @@ u_k = 20*ones((Nx+1,Ny+1), dtype=double)   #dtype es el tipo de datos (double, f
 u_km1 = 20*ones((Nx+1,Ny+1), dtype=double)   #dtype es el tipo de datos (double, float, int32, int16...)
 
 #CB esencial
-
+u_k[:,1] = 0. #Condicion base extremo x inicial
 
 #Buena idea definir funciones que hagan el codigo expresivo
 def printbien(u):
@@ -91,10 +91,10 @@ for k in range(int32(30./dt)):
     print "k = ", k, " t = ", t
 
     #CB esencial
-
-    u_k[:,-1] = 20 + 10* sin((2* math.pi/24.)*t) #Se defina la funcion que generara calor
+    u_k[:,1] = 20.
+    u_k[:,-1] = 20. + 10.*sin((2.*math.pi/24.)*t) #Se defina la funcion que generara calor
     #Loop en el espacio   i = 1 ... n-1   u_km1[0] = 0  u_km1[n] = 20
-    for i in range(1,Nx):
+    for i in range(0,Nx):
         for j in range(1,Ny):
             #Algoritmo de diferencias finitas 2-D para difusion            
             #Laplaciano
@@ -111,8 +111,8 @@ for k in range(int32(30./dt)):
     u_k = u_km1
 
     #CB esencial una ultima vez
-
-    u_k[:,-1] = 20 + 10* sin((2* math.pi/24.)*t) #Se defina la funcion que generara calor
+    u_k[:,1] = 20.
+    u_k[:,-1] = 20. + 10.*sin((2.*math.pi/24.)*t) #Se defina la funcion que generara calor
     
     print "Tmax = ", u_k.max()
     
