@@ -10,4 +10,4 @@ Se estudiará la difusión calórica en un medio sólido usando simulaciones num
 
 Link de Board en [Trello](https://trello.com/b/xfHGW3HA/mcoc-proyecto-1)
 
-Los archivos de cada entrega se encuentran en una carpeta, y los informes en SAF enviados por el jefe de grupo.
+Cada entrega se puede ver en su carpeta respectiva.
