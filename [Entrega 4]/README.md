@@ -16,7 +16,7 @@ El código utilizado se adjunta en esta misma carpeta como [Entrega 4 - Caso 1](
 
 También se puede ver en el siguiente video, el cual cambia de imágen cada 0.2 secs.
 
-![Watch the video][https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/README.md](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/movie_Caso1.mp4)
+![Watch the video][Video Caso 1](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/movie_Caso1.mp4)
 
 ## Caso 2
 
@@ -32,4 +32,4 @@ El código utilizado se adjunta en esta misma carpeta como [Entrega 4 - Caso 2](
 
 También se puede ver en el siguiente video, el cual cambia de imágen cada 0.2 secs.
 
-![Watch the video][ ](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/movie_Caso2.mp4)
+![Watch the video][Video Caso 2](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/movie_Caso2.mp4)
