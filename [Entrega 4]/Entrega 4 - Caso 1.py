@@ -2,9 +2,9 @@ from matplotlib.pylab import *
 
 
 a = 1.    		#Ancho del dominio
-b = 1.          	#Largo del dominio
-Nx = 30    		#Numero de intervalos en x
-Ny = 30   		#Numero de intervalos en Y
+b = 1.          #Largo del dominio
+Nx = 40    		#Numero de intervalos en x
+Ny = 40   		#Numero de intervalos en Y
 
 dx = b / Nx   	#Discretizacion espacial en X
 dy = a / Ny   	#Discretizacion espacial en Y
@@ -87,14 +87,14 @@ k = 0
 dnext_t = 1   #  cada 1 segundo se imprime un grafico
 next_t = 0.  
 framenum = 0
-for k in range(int32(30./dt)):
+for k in range(int32(50./dt)):
     t = dt*(k+1)
     print "k = ", k, " t = ", t
 
     #CB esencial
     u_k[0,:] = 20. #condicion de borde
     u_k[-1,:] = 20. #condicion de borde
-    u_k[:,-1] = 20 + 10* sin((2* math.pi/24.)*t) #Se defina la funcion que generara calor
+    u_k[:,-1] = 20. + 10.*sin((2.*math.pi/24.)*t) #Se defina la funcion que generara calor
     #Loop en el espacio   i = 1 ... n-1   u_km1[0] = 0  u_km1[n] = 20
     for i in range(1,Nx):
         for j in range(1,Ny):
@@ -115,7 +115,7 @@ for k in range(int32(30./dt)):
     #CB esencial una ultima vez
     u_k[0,:] = 20. #condicion de borde
     u_k[-1,:] = 20. #condicion de borde
-    u_k[:,-1] = 20 + 10* sin((2* math.pi/24.)*t) #Se defina la funcion que generara calor
+    u_k[:,-1] = 20. + 10.*sin((2.*math.pi/24.)*t) #Se defina la funcion que generara calor
     
     print "Tmax = ", u_k.max()
     

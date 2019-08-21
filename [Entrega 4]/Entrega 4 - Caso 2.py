@@ -2,9 +2,9 @@ from matplotlib.pylab import *
 
 
 a = 1.    		#Ancho del dominio
-b = 1.           	#Largo del dominio
-Nx = 30    		#Numero de intervalos en x
-Ny = 30  		#Numero de intervalos en Y
+b = 1.           #Largo del dominio
+Nx = 40    		#Numero de intervalos en x
+Ny = 40  		#Numero de intervalos en Y
 
 dx = b / Nx   	#Discretizacion espacial en X
 dy = a / Ny   	#Discretizacion espacial en Y
@@ -36,7 +36,7 @@ u_k = 20*ones((Nx+1,Ny+1), dtype=double)   #dtype es el tipo de datos (double, f
 u_km1 = 20*ones((Nx+1,Ny+1), dtype=double)   #dtype es el tipo de datos (double, float, int32, int16...)
 
 #CB esencial
-u_k[:,1] = 0. #Condicion base extremo x inicial
+u_k[:,0] = 0. #Condicion base extremo x inicial
 
 #Buena idea definir funciones que hagan el codigo expresivo
 def printbien(u):
@@ -86,7 +86,7 @@ k = 0
 dnext_t = 1   #  cada 1 segundo se imprime un grafico
 next_t = 0.  
 framenum = 0
-for k in range(int32(30./dt)):
+for k in range(int32(50./dt)):
     t = dt*(k+1)
     print "k = ", k, " t = ", t
 
