@@ -12,7 +12,7 @@ Para esto se utilizo que los bordes laterales e inferior tenían una temperatura
 
 El código utilizado se adjunta en esta misma carpeta como [Entrega 4 - Caso 1](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/Entrega%204%20-%20Caso%201.py)
 #### Resultados Caso 1
-
+![al text](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/Casos%201.png) 
 ### Caso 2
 
 El caso propuesto por el profesor fue el siguiente:
@@ -23,3 +23,4 @@ Para esto se utilizo que los bordes laterales e inferior tenían una temperatura
 El código utilizado se adjunta en esta misma carpeta como [Entrega 4 - Caso 2](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/Entrega%204%20-%20Caso%202.py)
 
 #### Resultados Caso 2
+![al text](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%204%5D/Casos%202.png) 
