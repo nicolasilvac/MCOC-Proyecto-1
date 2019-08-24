@@ -16,7 +16,7 @@ Las condiciones de borde que se utilizaron en este caso fueron las siguientes:
 ![al_text](https://github.com/nicolasilvac/MCOC-Proyecto-1/blob/master/%5BEntrega%206%5D/Funci%C3%B3n.png)
 
 
-##Resultados
+## Resultados
 
 El gráfico que arrojó el programa fue el siguiente:
 
