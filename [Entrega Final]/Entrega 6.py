@@ -9,7 +9,7 @@ Ny = 20   		#Numero de intervalos en Y
 Nz = 20          #Numero de intervalos en Z
 dy = a / Ny   	#Discretizacion espacial en Y
 dx = b / Nx   	#Discretizacion espacial en X
-dz = c / Ny   	#Discretizacion espacial en Z
+dz = c / Nz   	#Discretizacion espacial en Z
 h = dx    # = dy  
 
 if dx != dy and dx !=dz:
