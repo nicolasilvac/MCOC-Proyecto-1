@@ -1,11 +1,11 @@
 from matplotlib.pylab import *
 from matplotlib import pyplot
 
-a = 1.    		 #Ancho del dominio
+a = 1.    	 #Ancho del dominio
 b = 1.           #Largo del dominio
 c = 1.           #Profundidad del dominio
-Nx = 20    		 #Numero de intervalos en x
-Ny = 20   		 #Numero de intervalos en Y
+Nx = 20    	 #Numero de intervalos en x
+Ny = 20   	 #Numero de intervalos en Y
 Nz = 20          #Numero de intervalos en Z
 dy = a / Ny   	 #Discretizacion espacial en Y
 dx = b / Nx   	 #Discretizacion espacial en X
@@ -33,7 +33,7 @@ for linea in archivo.readlines():
     TempAmbiente.append(float(linea))
 
 #Se crea una matriz llena de temperatura inicial ambiente
-u_k = TempAmbiente[0]*ones((Nx+1,Ny+1,Nz+1), dtype=double)   #dtype es el tipo de datos (double, float, int32, int16...)
+u_k = TempAmbiente[0]*ones((Nx+1,Ny+1,Nz+1), dtype=double)     #dtype es el tipo de datos (double, float, int32, int16...)
 u_km1 = TempAmbiente[0]*ones((Nx+1,Ny+1,Nz+1), dtype=double)   #dtype es el tipo de datos (double, float, int32, int16...)
 
 #Loop en el tiempo 
